@@ -1,0 +1,70 @@
+.header{
+  height: 170px;
+  width: 100vw;
+  background-color: rgb(12, 13, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Tenor Sans";
+  font-size: 1rem;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  nav{
+    max-width: 1366px;
+    margin: 0 auto;
+    position: relative;
+    menu{
+      ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+          list-style-type: none;
+          white-space: nowrap;
+          text-align: center;
+          padding: 10px 20px;
+          a{
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logocontainer{
+  padding: 0 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.langbutton {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 5.84px;
+  margin-left: 13px;
+}
+
+.topbuttons{
+  position: absolute;
+  bottom: 80%;
+  right: 110px;
+  a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-left: 20px;
+  }
+}
