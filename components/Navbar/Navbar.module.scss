@@ -1,5 +1,5 @@
 .header{
-  height: 170px;
+  height: 130px;
   width: 100vw;
   background-color: rgb(12, 13, 56);
   display: flex;
@@ -38,7 +38,7 @@
 
 .logocontainer{
   padding: 0 40px;
-  width: 200px;
+  width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,13 +58,9 @@
 
 .topbuttons{
   position: absolute;
-  bottom: 80%;
+  top: 20px;
   right: 110px;
   a{
-    color: white;
     text-decoration: none;
-    border: 1px solid white;
-    padding: 10px 20px;
-    margin-left: 20px;
   }
 }

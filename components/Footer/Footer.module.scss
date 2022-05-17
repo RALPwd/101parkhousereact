@@ -1,5 +1,113 @@
 .footer{
   background-color: #0c0d38;
-  height: 388px;
-  width: 100vw;
+  width: 100%;
+  &__container{
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 150px 60px 112px 78px;
+  }
+  &__logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    height: 100%;
+    padding: 0 20px;
+  }
+  &__logo{
+    width: 120px;
+  }
+  &__prizes{
+    display: flex;
+    position: relative;
+    h5{
+      font-family: "Tenor Sans";
+      font-size: 1rem;
+      color: #FFFFFF;
+      margin-right: 20px;
+      text-transform: uppercase;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+    }
+  }
+  &__prize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 90px;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #FFFFFF;
+    ul{
+      display: flex;
+      li{
+        list-style-type: none;
+        white-space: nowrap;
+        text-align: center;
+        padding: 10px 20px;
+        a{
+          color: white;
+          text-decoration: none;
+          font-family: "Tenor Sans";
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  &__contactinfo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font: 1rem 'Tenor Sans';
+    border-bottom: 1px solid white;
+    &__inner{
+      width: 93%;
+      margin: 0 auto;
+      text-align: right;
+    }
+    &__address{
+      font-family: 'Mukta';
+      color: #97805A;
+      margin-top: 10px;
+      a{
+        color: #97805A;
+        text-decoration: none;
+        :hover{
+          color: #97805A;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__secondaryLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    &__legal{
+      ul{
+        li{
+          list-style-type: none;
+          display: inline;
+          margin: 0 8px;
+          a{
+            color: white;
+            text-decoration: none;
+            font-family: "Mukta";
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
 }
