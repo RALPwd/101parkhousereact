@@ -1,0 +1,18 @@
+.button{
+  background-color: #97805a;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Tenor Sans";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.5s;
+  height: 100%;
+  &:hover{
+    color: #0c0d38;
+    transition: 0.5s;
+  }
+}
