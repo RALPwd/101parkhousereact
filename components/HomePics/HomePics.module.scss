@@ -1,0 +1,26 @@
+.menu{
+  &__inner{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 52px;
+    margin-bottom: 40px;
+    li{
+      font-family: "Tenor Sans";
+      font-size: 2rem;
+      color: #0c0d38;
+      cursor: pointer;
+      list-style-type: none;
+    }
+  }
+}
+
+.images{
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected{
+  color: #97805a !important;
+}
