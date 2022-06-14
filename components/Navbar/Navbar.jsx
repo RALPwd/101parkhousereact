@@ -49,16 +49,6 @@ const Navbar = () => {
               </div>
             </li>
           </ul>
-          <div className={styles.topbuttons}>
-            <Link href="/EnVivo">
-              <a>
-                <LinkButtons label="Eventos en vivo" />
-              </a>
-            </Link>
-            <a href="#">
-              <LinkButtons label="Reservar" />
-            </a>
-          </div>
         </menu>
       </nav>
     </header>
