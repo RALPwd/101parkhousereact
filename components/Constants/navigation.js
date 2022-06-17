@@ -5,7 +5,7 @@ export const mainLinks = [
   },
   {
     name: 'Planes',
-    href: '/Planes/1'
+    href: '/Planes'
   },
   {
     name: 'Largas Estadias',

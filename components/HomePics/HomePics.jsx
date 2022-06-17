@@ -24,11 +24,14 @@ const HomePics = () => {
       </ul>
       <div className={style.images}>
         {picsMenu[id].pics.map((pic) => (
-          <Image
-            key={pic.id}
-            src={pic.image}
-            alt={pic.alt}
-          />
+          <div className={style.image}>
+            <Image
+              key={pic.id}
+              src={pic.image}
+              alt={pic.alt}
+              layout="responsive"
+            />
+          </div>
         ))}
       </div>   
     </div>
