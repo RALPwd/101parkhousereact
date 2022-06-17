@@ -21,7 +21,7 @@ const Popup = () => {
       const response = await fetch(url);
       const data = await response.json();
       console.log(data);
-      if(data.data !== null) {
+      if(data.data !== null && data.data.attributes.popup.data !== null) {
         setImage(data.data.attributes.popup.data.attributes.url)
         setLink(data.data.attributes.url)
         setModalIsOpen(true)
