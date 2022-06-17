@@ -1,10 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import API_URL_DEV from '../../components/Constants/api';
+import { useRouter } from 'next/router';
+import API_URL from '../../components/Constants/api';
+import style from './Plan.module.scss';
 
 const PlanMenu = () => {
   const [plans, setPlans] = React.useState([]);
-  const url = `${API_URL_DEV}/api/plans`;
+  const url = `${API_URL}/api/plans?sort=id`;
+  const router = useRouter();
 
   React.useEffect(() => {
     if (!plans.length) {
@@ -16,10 +19,10 @@ const PlanMenu = () => {
   }, [plans]);
 
   return (
-    <div>
+    <div className={style.planMenu}>
       <ul>
         {plans.map((plan) => (
-          <li key={plan.attributes.id}>
+          <li key={plan.attributes.id} className={plan.id == router.query.plan ? style.active : null}>
             <Link href={`/Planes/${plan.id}`}>
               <a>{plan.attributes.titulo}</a>
             </Link>
