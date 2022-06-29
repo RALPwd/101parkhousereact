@@ -43,6 +43,7 @@ const BookForm = () => {
               selectsStart
               startDate={datein}
               endDate={dateout}
+              minDate={new Date()}
               className={styles.BookForm__datepicker}
             />
           </label>

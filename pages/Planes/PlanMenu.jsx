@@ -22,7 +22,7 @@ const PlanMenu = () => {
     <div className={style.planMenu}>
       <ul>
         {plans.map((plan) => (
-          <li key={plan.attributes.id} className={plan.id == router.query.plan ? style.active : null}>
+          <li key={plan.id} className={plan.id == router.query.plan ? style.active : null}>
             <Link href={`/Planes/${plan.id}`}>
               <a>{plan.attributes.titulo}</a>
             </Link>

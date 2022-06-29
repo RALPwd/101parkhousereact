@@ -1,0 +1,53 @@
+.BookForm {
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  top: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BookForm__container {
+  max-width: 1366px;
+  margin: 10px auto;
+}
+.BookForm form {
+  display: flex;
+}
+.BookForm form label {
+  color: #0c0d38;
+  font-family: "Mukta";
+  font-size: 1.3rem;
+}
+.BookForm__input {
+  border: 1px solid #0c0d38;
+  margin-left: 14px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+.BookForm__datepicker {
+  background-color: white;
+  color: #0c0d38;
+  font-family: "Tenor Sans";
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: right;
+  width: 150px;
+}
+.BookForm__select {
+  background-color: white;
+  color: #0c0d38;
+  font-family: "Tenor Sans";
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: right;
+  width: 150px;
+}
+.BookForm__button {
+  margin-left: 14px;
+}/*# sourceMappingURL=BookForm.module.css.map */
