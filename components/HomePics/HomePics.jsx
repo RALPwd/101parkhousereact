@@ -24,9 +24,8 @@ const HomePics = () => {
       </ul>
       <div className={style.images}>
         {picsMenu[id].pics.map((pic) => (
-          <div className={style.image}>
+          <div className={style.image} key={pic.id}>
             <Image
-              key={pic.id}
               src={pic.image}
               alt={pic.alt}
               layout="responsive"

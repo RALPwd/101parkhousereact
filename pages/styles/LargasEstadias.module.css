@@ -1,0 +1,72 @@
+.container {
+  background-color: whitesmoke;
+}
+
+.grid {
+  margin: 120px auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+.grid__item {
+  display: flex;
+  align-items: center;
+}
+.grid__item__image {
+  width: 12%;
+  margin-right: 10px;
+}
+.grid__item p {
+  font-size: 1.5rem;
+  font-family: "Tenor Sans";
+}
+
+.secondGrid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto 80px auto;
+  margin-top: 80px;
+}
+.secondGrid__item {
+  display: flex;
+  align-items: center;
+}
+.secondGrid__item__image {
+  width: 8%;
+  margin-right: 10px;
+}
+.secondGrid__item p {
+  font-family: "Mukta";
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  color: white;
+  background-color: #97805A;
+  text-align: center;
+  padding: 70px 30px;
+}
+.hero p {
+  font-size: 3rem;
+  font-family: "Tenor Sans";
+}
+
+.secondHero {
+  margin-top: 40px;
+  background: #C4C4C4;
+  text-align: center;
+  padding: 33px 15px;
+}
+.secondHero p {
+  font-size: 1.5rem;
+  color: #0C0D38;
+  font-family: "Mukta";
+}/*# sourceMappingURL=LargasEstadias.module.css.map */
