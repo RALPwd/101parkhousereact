@@ -35,7 +35,7 @@
 	       />
 
 	<!-- skin_thumbtext_style - style/textfield for the (optional, skin_settings.thumbs_text) thumbnails texts -->
-	<style name="skin_thumbtext_style" url="%SWFPATH%/plugins/textfield.swf" align="bottom" edge="top" width="200" autoheight="true" y="0" enabled="false" background="false" border="false" css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:10px;" textshadow="1" />
+	<style name="skin_thumbtext_style" url="%SWFPATH%/krpano/plugins/textfield.swf" align="bottom" edge="top" width="200" autoheight="true" y="0" enabled="false" background="false" border="false" css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:10px;" textshadow="1" />
 
 	<!-- skin_hotspotstyle - style for the hotspots (note - the onclick event will be overwritten here and can't be set directly at the hotspot! the hotspots need to have a 'linkedscene' attribute to be clickable) -->
 	<style name="skin_hotspotstyle" url="vtourskin_hotspot.png" scale="1.0"
@@ -56,7 +56,7 @@
 
 	<!-- the tooltip textfield -->
 	<layer name="skin_tooltip" keep="true"
-	       url="%SWFPATH%/plugins/textfield.swf"
+	       url="%SWFPATH%/krpano/plugins/textfield.swf"
 	       parent="STAGE"
 	       visible="false" alpha="0" enabled="false"
 	       align="lefttop" edge="bottom" oy="-2" width="200" autoheight="true"
@@ -86,13 +86,13 @@
 	<layer name="skin_scroll_window" type="container" keep="true" align="leftbottom" width="100%" height="100%" x="0" y="60" y_opened="60" y_closed="-2" maskchildren="true">
 		<layer name="skin_scroll_layer" type="container" align="leftbottom" width="100%" height="100%" x="0" y="-100%">
 			<layer name="skin_topborder" style="skin_base" crop="2|0|60|12" align="topleft" edge="bottomleft" width="100%" height="12" x="0" y="0" enabled="false" />
-			<layer name="skin_title" url="%SWFPATH%/plugins/textfield.swf" align="lefttop" edge="leftbottom" width="95%" height="32" autoheight="true" x="5" y="-3" zorder="4" enabled="false" background="false" border="false" css="text-align:left; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:16px;" textshadow="1" visible="false" />
+			<layer name="skin_title" url="%SWFPATH%/krpano/plugins/textfield.swf" align="lefttop" edge="leftbottom" width="95%" height="32" autoheight="true" x="5" y="-3" zorder="4" enabled="false" background="false" border="false" css="text-align:left; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:16px;" textshadow="1" visible="false" />
 			<layer name="skin_scroll_container" type="container" bgcolor="0x000000" bgalpha="0.5" align="lefttop" width="100%" height="100%" x="0" y="0" maskchildren="true">
 				<layer name="skin_thumbs_container" type="container" align="lefttop" width="100%" height="100%" visible="false">
 					<layer name="skin_thumbs_scrollleft"  style="skin_base|skin_glow" crop="0|64|64|64"  align="lefttop"  edge="left"  x="5" y="50" scale="0.5" zorder="2" alpha="1.0" ondown2="asyncloop(pressed, layer[skin_thumbs].scrollby(+2,0));" visible="false" />
 					<layer name="skin_thumbs_scrollright" style="skin_base|skin_glow" crop="64|64|64|64" align="righttop" edge="right" x="5" y="50" scale="0.5" zorder="2" alpha="1.0" ondown2="asyncloop(pressed, layer[skin_thumbs].scrollby(-2,0));" visible="false" />
 					<layer name="skin_thumbs_scrollindicator" type="container" bgcolor="0xFFFFFF" bgalpha="0.25" align="lefttop" width="0" y="100" height="4" visible="false" enabled="false" />
-					<layer name="skin_thumbs" state="closed" url="%SWFPATH%/plugins/scrollarea.swf" alturl="%SWFPATH%/plugins/scrollarea.js" direction="h" align="top" width="100%" height="100" zorder="1" onloaded="skin_updatescroll();" onscroll="skin_updatethumbscroll();" />
+					<layer name="skin_thumbs" state="closed" url="%SWFPATH%/krpano/plugins/scrollarea.swf" alturl="%SWFPATH%/krpano/plugins/scrollarea.js" direction="h" align="top" width="100%" height="100" zorder="1" onloaded="skin_updatescroll();" onscroll="skin_updatethumbscroll();" />
 				</layer>
 			</layer>
 		</layer>
@@ -114,14 +114,14 @@
 		<layer name="skin_btn_show"   style="skin_base|skin_glow" crop="64|448|64|64" align="right"       x="5"    y="-36" scale="0.5" alpha="0" visible="false" onclick="skin_showskin()" />
 	</layer>
 
-	<layer name="skin_loadingtext"  keep="true" url="%SWFPATH%/plugins/textfield.swf" align="center" x="5" y="-5" html="loading..." visible="false" autoheight="true" background="false" border="false" enabled="false" css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:22px; font-style:italic;" textshadow="2" />
+	<layer name="skin_loadingtext"  keep="true" url="%SWFPATH%/krpano/plugins/textfield.swf" align="center" x="5" y="-5" html="loading..." visible="false" autoheight="true" background="false" border="false" enabled="false" css="text-align:center; color:#FFFFFF; font-family:Arial; font-weight:bold; font-size:22px; font-style:italic;" textshadow="2" />
 	<layer name="skin_buttonglow"   keep="true" style="skin_base" crop="64|384|64|64" align="center" x="0" y="1" alpha="0.0" visible="false" enabled="false" />
 	<layer name="skin_thumbborder"  keep="true" url="vtourskin_thumbborder.png" visible="false" enabled="false" align="lefttop" scale="0.5" ox="-2" oy="-2" />
 
-	<layer name="thumbborder_selected"  keep="true" url="%SWFPATH%/skin/thumbborder.png" visible="false" enabled="false" align="lefttop" scale="1.0" ox="0" oy="0" />
-	<style name="thumbborder" keep="true" url="%SWFPATH%/skin/thumbborder_b.png" enabled="false" align="lefttop" scale="1.0" ox="0" oy="0" />
+	<layer name="thumbborder_selected"  keep="true" url="%SWFPATH%/krpano/skin/thumbborder.png" visible="false" enabled="false" align="lefttop" scale="1.0" ox="0" oy="0" />
+	<style name="thumbborder" keep="true" url="%SWFPATH%/krpano/skin/thumbborder_b.png" enabled="false" align="lefttop" scale="1.0" ox="0" oy="0" />
 
-	<plugin name="skin_gyro"        keep="true" url="" html5_url="%SWFPATH%/plugins/gyro.js" devices="html5+!firefox+!android" enabled="false" camroll="true" friction="0" velastic="0" onavailable="set(layer[skin_btn_gyro].visible,true);" />
+	<plugin name="skin_gyro"        keep="true" url="" html5_url="%SWFPATH%/krpano/plugins/gyro.js" devices="html5+!firefox+!android" enabled="false" camroll="true" friction="0" velastic="0" onavailable="set(layer[skin_btn_gyro].visible,true);" />
 
 	<!-- ZOOM SLIDER FOR DESKTOP ONLY -->
 	<events name="sliderevents" keep="true" devices="desktop" onviewchanged="updateslider();" />

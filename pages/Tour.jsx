@@ -4,11 +4,16 @@ import useKrpano from 'react-krpano-hooks'
 
 const Tour = () => {
 
-  const { containerRef } = useKrpano()
+  let krpano
+
+  if(typeof window !== 'undefined') {
+    const { containerRef } = useKrpano()
+    krpano = containerRef
+  }
 
   return (
     <Layout>
-      <div ref={containerRef} />
+      <div ref={krpano} />
     </Layout>
   )
 }

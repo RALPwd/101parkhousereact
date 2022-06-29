@@ -1,20 +1,20 @@
-<krpano version="1.17" title="101 Park House" onstart="jscall(reactKrpano.onStart());" logkey="false" showerrors="false">
-<!-- <krpano version="1.17" title="101 Park House" onstart="startup();" logkey="false" showerrors="false"> -->
+<!-- <krpano version="1.17" title="101 Park House" onstart="jscall(reactKrpano.onStart());" logkey="false" showerrors="false"> -->
+<krpano version="1.17" title="101 Park House" onstart="startup();" logkey="false" showerrors="false">
 <!--krpano version="1.17" title="101 Park House" onstart="startup();"-->
 
 	<!--	
-	<plugin name="editor"  url="%SWFPATH%/plugins/editor.swf" keep="true"  />
+	<plugin name="editor"  url="%SWFPATH%/krpano/plugins/editor.swf" keep="true"  />
 	-->
 
 	<include url="skin/titanioskin.xml" />
-	<skin_settings logo_intro = "true" logo_intro_url = "%SWFPATH%/skin/logo.jpg" />
+	<skin_settings logo_intro = "true" logo_intro_url = "%SWFPATH%/krpano/skin/logo.jpg" />
 
 	<action name="startup">
 		loadscene(scene_14, null, MERGE);
 		<!-- set(layer[skin_introtext].html, [b]101 Park House[/b][br][br][i]Bogotá[/i]); -->
 	</action>
 	
-	<scene name="scene_14" title="Recepción" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb14.jpg" lat="" lng="" heading="">
+	<scene name="scene_14" title="Recepción" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb14.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-1.967" vlookat="5.903" fovtype="MFOV" fov="120.000" maxpixelzoom="0" fovmin="80" fovmax="130" limitview="auto" />
 
@@ -40,7 +40,7 @@
 
 	</scene>
 
-	<scene name="scene_15" title="Restaurante" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb15.jpg" lat="" lng="" heading="">
+	<scene name="scene_15" title="Restaurante" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb15.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-152.333" vlookat="18.458" fovtype="MFOV" fov="120.000" maxpixelzoom="0" fovmin="80" fovmax="130" limitview="auto" />
 
@@ -58,7 +58,7 @@
 
 	</scene>
 
-	<scene name="scene_03" title="Suite Imperial 1er Piso" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb03.jpg" lat="" lng="" heading="">
+	<scene name="scene_03" title="Suite Imperial 1er Piso" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb03.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-17.372" vlookat="16.173" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -78,7 +78,7 @@
 
 	</scene>
 	
-	<scene name="scene_02" title="Suite Imperial Habitación Aux." onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb02.jpg" lat="" lng="" heading="">
+	<scene name="scene_02" title="Suite Imperial Habitación Aux." onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb02.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-76.031" vlookat="38.104" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -96,7 +96,7 @@
 
 	</scene>
 	
-	<scene name="scene_01" title="Suite Imperial 2do Piso" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb01.jpg" lat="" lng="" heading="">
+	<scene name="scene_01" title="Suite Imperial 2do Piso" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb01.jpg" lat="" lng="" heading="">
 
 		<view hlookat="109.148" vlookat="20.111" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -114,7 +114,7 @@
 
 	</scene>
 
-	<scene name="scene_09" title="Executive Suite" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb09.jpg" lat="" lng="" heading="">
+	<scene name="scene_09" title="Executive Suite" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb09.jpg" lat="" lng="" heading="">
 
 		<view hlookat="56.394" vlookat="16.412" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -133,7 +133,7 @@
 
 	</scene>
 
-	<scene name="scene_10" title="Executive Suite Habitación" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb10.jpg" lat="" lng="" heading="">
+	<scene name="scene_10" title="Executive Suite Habitación" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb10.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-41.195" vlookat="27.436" fovtype="MFOV" fov="100.000" maxpixelzoom="0" fovmin="90" fovmax="120" limitview="auto" />
 
@@ -151,7 +151,7 @@
 
 	</scene>
 
-	<scene name="scene_13" title="Grand Suite" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb13.jpg" lat="" lng="" heading="">
+	<scene name="scene_13" title="Grand Suite" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb13.jpg" lat="" lng="" heading="">
 
 		<view hlookat="22.812" vlookat="20.779" fovtype="MFOV" fov="120.000" maxpixelzoom="0" fovmin="80" fovmax="130" limitview="auto" />
 
@@ -170,7 +170,7 @@
 
 	</scene>
 	
-	<!--scene name="scene_04" title="Grand Suite Sala" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb04.jpg" lat="" lng="" heading="">
+	<!--scene name="scene_04" title="Grand Suite Sala" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb04.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-9.751" vlookat="22.940" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -187,7 +187,7 @@
 
 	</scene-->
 
-	<scene name="scene_05" title="Grand Suite Habitación Principal" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb05.jpg" lat="" lng="" heading="">
+	<scene name="scene_05" title="Grand Suite Habitación Principal" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb05.jpg" lat="" lng="" heading="">
 
 		<view hlookat="163.742" vlookat="20.552" fovtype="MFOV" fov="100.000" maxpixelzoom="0" fovmin="90" fovmax="120" limitview="auto" />
 
@@ -205,7 +205,7 @@
 
 	</scene>
 
-	<scene name="scene_08" title="Business Suite" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb08.jpg" lat="" lng="" heading="">
+	<scene name="scene_08" title="Business Suite" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb08.jpg" lat="" lng="" heading="">
 
 		<view hlookat="80.639" vlookat="18.267" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -225,7 +225,7 @@
 
 	</scene>
 	
-	<scene name="scene_07" title="Business Suite Sala" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb07.jpg" lat="" lng="" heading="">
+	<scene name="scene_07" title="Business Suite Sala" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb07.jpg" lat="" lng="" heading="">
 
 		<view hlookat="5.557" vlookat="22.726" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -243,7 +243,7 @@
 
 	</scene>
 
-	<scene name="scene_06" title="Business Suite Habitación" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb06.jpg" lat="" lng="" heading="">
+	<scene name="scene_06" title="Business Suite Habitación" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb06.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-152.090" vlookat="30.020" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -261,7 +261,7 @@
 
 	</scene>
 
-	<scene name="scene_12" title="Grand Suite Jacuzzi" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb12.jpg" lat="" lng="" heading="">
+	<scene name="scene_12" title="Grand Suite Jacuzzi" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb12.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-9.367" vlookat="23.677" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -280,7 +280,7 @@
 
 	</scene>
 
-	<!--scene name="scene_11" title="Grand Suite Jacuzzi Habitación" onstart="" thumburl="%SWFPATH%/panos/thumbs/thumb11.jpg" lat="" lng="" heading="">
+	<!--scene name="scene_11" title="Grand Suite Jacuzzi Habitación" onstart="" thumburl="%SWFPATH%/krpano/panos/thumbs/thumb11.jpg" lat="" lng="" heading="">
 
 		<view hlookat="179.049" vlookat="29.092" fovtype="MFOV" fov="110.000" maxpixelzoom="0" fovmin="90" fovmax="140" limitview="auto" />
 
@@ -311,10 +311,10 @@
 
 		<!--******************************************* HOTSPOTS ******************************************* -->
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="56.315" atv="2.005" linkedscene="scene_12" />
-		<!--hotspot name="spot2" url="%SWFPATH%/skin/vtourskin_hotspot.png" ath="5.548" atv="3.791" onhover="showtext(Jacuzzi)" onclick="showfoto()" />
+		<!--hotspot name="spot2" url="%SWFPATH%/krpano/skin/vtourskin_hotspot.png" ath="5.548" atv="3.791" onhover="showtext(Jacuzzi)" onclick="showfoto()" />
 		
 		<layer name="jacuzzi"
-				url="%SWFPATH%/panos/jacuzzi.jpg"
+				url="%SWFPATH%/krpano/panos/jacuzzi.jpg"
 				ath="0" atv="0"
 				align="center" edge="center"
 				width="1080" height="720"
