@@ -7,6 +7,8 @@ import Slider from 'react-slick';
 import { suites } from '@components/Constants/suites';
 import styles from './Suites.module.scss';
 import { IconContext } from 'react-icons';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const NextArrow = ({ onClick }) => {
 
