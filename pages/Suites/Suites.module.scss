@@ -1,0 +1,141 @@
+.menu{
+  h2{
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  p{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Mukta';
+    font-weight: 700;
+    color: #97805A;
+    padding-bottom: 56px;
+  }
+}
+
+.slide{
+  h3{
+    color: #0C0D38;
+    font-family: 'Tenor Sans';
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+  &__imagecontainer{
+    width: 90%;
+  }
+  &__buttons{
+    border-top: 2px solid #97805A;
+    width: 92.5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Mukta';
+    padding-bottom: 30px;
+    a{
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: #0C0D38;
+    }
+  }
+}
+
+.arrow {
+  border: 2px solid #0c0d38;
+  border-radius: 100%;
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.nextArrow {
+  right: 60px;
+  top: -50px;
+}
+
+.prevArrow {
+  left: 60px;
+  top: -50px;
+}
+
+.svgIcon {
+  polyline{
+    stroke: #0c0d38;
+  }
+}
+
+.details{
+  background-color: #f5f5f5;
+  padding-bottom: 55px;
+  h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    padding: 50px 0;
+    border-bottom: 2px solid #0C0D38;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    &__slider{
+      width: 98%;
+      margin: 0 auto;
+      padding-top: 61px;
+    }
+    &__info{
+      max-width: 594px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 70px;
+      &__description{
+        font-family: 'Mukta';
+        border-bottom: 1px solid #0C0D38;
+        ul{
+          padding-bottom: 21px;
+          color: #444444;
+          li{
+            list-style-type: none;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &__size{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0 25px 0;
+        border-bottom: 1px solid #0C0D38;
+        h3{
+          font-size: 2.2rem;
+          font-family: 'Tenor Sans';
+          font-weight: 400;
+          color: #0C0D38;
+        }
+        p{
+          font-size: 1.4rem;
+          font-family: 'Mukta';
+          font-weight: 700;
+          color: #0C0D38;
+        }
+      }
+      &__booking{
+        padding-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+    }
+  }
+}

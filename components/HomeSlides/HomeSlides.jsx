@@ -1,37 +1,10 @@
 import React from 'react';
 import Slider from "react-slick";
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
 import styles from './HomeSlides.module.scss';
-import cx from 'classnames';
-import { GrNext, GrPrevious } from 'react-icons/gr';
-import { IconContext } from 'react-icons';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
-const NextArrow = ({ onClick }) => {
-
-  const { nextArrow, arrow, svgIcon } = styles
-
-  return (
-    <IconContext.Provider value={{ className: svgIcon }}>
-      <div className={cx(nextArrow, arrow)} onClick={onClick}>
-        <GrNext color='yellow'/>
-      </div>
-    </IconContext.Provider>
-  )
-}
-
-const PrevArrow = ({ onClick }) => {
-
-  const { prevArrow, arrow, svgIcon } = styles
-
-  return (
-    <IconContext.Provider value={{ className: svgIcon }}>
-      <div className={cx(prevArrow, arrow)} onClick={onClick}>
-        <GrPrevious/>
-      </div>
-    </IconContext.Provider>
-  )
-}
 
 const HomeSlides = ({ slides }) => {
 
