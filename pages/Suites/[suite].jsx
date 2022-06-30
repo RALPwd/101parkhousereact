@@ -11,7 +11,7 @@ import styles from './Suites.module.scss';
 const Suite = () => {
   const router = useRouter();
   const { suite } = router.query;
-  const suiteData = suites.find(suit => suit.id === suite);
+  const suiteData = suites.find(suit => suit.id === suite) || suites[0];
   const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
