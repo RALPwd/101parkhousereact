@@ -7,6 +7,8 @@ import EventsSlider from '@components/EventsSlider/EventsSlider'
 import DatePicker from 'react-datepicker'
 import styles from './styles/Eventos.module.scss'
 import map from '../public/images/mapa.jpg'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Eventos = () => {
   const [event, setEvent] = React.useState({
