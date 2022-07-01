@@ -1,0 +1,27 @@
+.barslide{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 46vw;
+  position: relative;
+}
+
+.slidercontainer{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.description{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 5%;
+  width: 80vw;
+  margin: 50px auto;
+  font-family: 'Mukta';
+  p{
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+}

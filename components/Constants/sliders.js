@@ -10,6 +10,12 @@ import salonGranParque from '../../public/images/salon_gran_parque.jpg';
 import salonGranParque2 from '../../public/images/salon_gran_parque(2).jpg';
 import salonOtono from '../../public/images/salon_otono.jpg';
 import salonParque from '../../public/images/salon_parque.jpg';
+import bar2 from '../../public/images/bar2.jpg';
+import bar3 from '../../public/images/bar3.jpg';
+import bar4 from '../../public/images/bar4.jpg';
+import bar5 from '../../public/images/bar5.jpg';
+import bar6 from '../../public/images/bar6.jpg';
+
 
 export const benefitsSlides = [
   {
@@ -133,5 +139,28 @@ export const eventsSlides = [
     id: 12,
     image: salonParque,
     alt: 'Salón parque'
+  }
+]
+
+export const barSlides = [
+  {
+    id: 1,
+    image: bar2,
+  },
+  {
+    id: 2,
+    image: bar3,
+  },
+  {
+    id: 3,
+    image: bar4,
+  },
+  {
+    id: 4,
+    image: bar5,
+  },
+  {
+    id: 5,
+    image: bar6,
   }
 ]
