@@ -70,3 +70,19 @@
     font-family: 'Mukta';
   }
 }
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .secondGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    &__item{
+      &__image{
+        width: 20%;
+      }
+    }
+  }
+}
