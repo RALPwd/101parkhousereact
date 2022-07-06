@@ -75,3 +75,24 @@
     left: 0px;
   }
 }
+
+@media (max-width: 768px){
+  .title{
+    p{
+      width: 90%;
+    }
+  }
+  .restaurant{
+    &__description{
+      top: 50px;
+      left: 0px;
+      max-width: 100%;
+    }
+    &__button{
+      width: 100vw;
+      button{
+        width: 100%;
+      }
+    }
+  }
+}
