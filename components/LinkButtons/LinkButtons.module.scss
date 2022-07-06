@@ -7,3 +7,9 @@
   font-family: "Tenor Sans";
   text-transform: uppercase;
 }
+
+@media (max-width: 968px){
+  .linkButtons{
+    display: none;
+  }
+}

@@ -11,12 +11,33 @@ const HomeSlides = ({ slides }) => {
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 3,
+    dots: false,
     autoplay: true,
     autoplaySpeed: 10000,
     infinite: true,
     speed: 800,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        }
+      }, 
+    ],
   };
 
   return (
