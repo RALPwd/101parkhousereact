@@ -4,6 +4,7 @@
     width: 80vw;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 52px;
     margin-bottom: 40px;
@@ -19,6 +20,7 @@
 
 .images{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -30,4 +32,10 @@
 
 .selected{
   color: #97805a !important;
+}
+
+@media (max-width: 720px){
+  .image{
+    width: 100%;
+  }
 }
