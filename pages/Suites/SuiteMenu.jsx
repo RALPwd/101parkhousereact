@@ -50,6 +50,22 @@ const SuiteMenu = () => {
     speed: 500,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "50px",
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "50px",
+        }
+      },
+    ],
   };
 
   return (

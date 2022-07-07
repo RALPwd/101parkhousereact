@@ -139,3 +139,13 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .details{
+    &__inner{
+      grid-template-columns: 100%;
+      width: 90%;	
+      margin: 0 auto;
+    }
+  }
+}
