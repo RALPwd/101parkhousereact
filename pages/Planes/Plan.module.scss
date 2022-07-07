@@ -104,3 +104,31 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .plan{
+    &__description{
+      width: 100%;
+      left: 0;
+      top: 0;
+      padding: 40px 0 40px 0;
+      h1{
+        width: 90%;
+        margin: 0 auto;
+      }
+      &__items{
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    &__prices{
+      padding-right: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__additionals{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '@components/Layout/Layout';
+import GoldButton from '@components/GoldButton/GoldButton';
 import PlanMenu from './Planes/PlanMenu';
 import API_URL from '@components/Constants/api';
 import style from './Planes/Plan.module.scss';
@@ -29,10 +30,14 @@ const Plan = () => {
           <div className={style.plan} style={{backgroundImage: `url(${showPlan.attributes.imagen.data.attributes.url})`}}>
             <div className={style.plan__description}>
               <h1>{showPlan.attributes.titulo}</h1>
-              <div dangerouslySetInnerHTML={{__html: sanitize(showPlan.attributes.descripcion)}} />
-              <p>{showPlan.attributes.precio}</p>
-              <a href={showPlan.attributes.url} target="_blank">Quiero reservar</a>
-              <p>{showPlan.attributes.adicionales}</p>
+              <div className={style.plan__description__items} dangerouslySetInnerHTML={{__html: sanitize(showPlan.attributes.descripcion)}} />
+              <div className={style.plan__prices}>
+                <p>Desde ${parseInt(showPlan.attributes.precio, 10).toLocaleString()}</p>
+                <GoldButton type="button" value="Quiero reservar" onClick={() => window.open(showPlan.attributes.url, "_blank")} />
+              </div>
+              <div className={style.plan__additionals}>
+                <p>{showPlan.attributes.adicionales}</p>  
+              </div>
             </div>
           </div>
         )
